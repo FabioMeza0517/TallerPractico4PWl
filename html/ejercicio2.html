@@ -4,61 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2</title>
+    <title>Document</title>
     <meta name="author" content="Fabio Andres Meza Banquet">
-    <meta name="description" content="Ejercicio 2">
+    <meta name="description" content="Página Ejercicio 2">
     <style>
         .divUno {
             width: 100%;
             height: 200px;
             background-color: black;
+            text-align: center;
+            overflow: hidden;
         }
 
         .divUno>h1 {
-            font-size: 170px;
+            font-size: 150px;
             color: white;
             margin: 0px;
-            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
         }
+
 
         .divDos {
             background-color: #f5f4f9;
-            width: 100%;
-            height: 600px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             padding: 30px;
+            height: 450px;
+            overflow: hidden;
         }
 
         .divTarjetas {
-            background-color: white;
-            height: 100%;
-            width: 200px;
-            padding: 0px;
+            width: 250px;
+            background: white;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            overflow: hidden;
         }
 
-        img {
+        .divTarjetas>img {
             width: 100%;
-            height: 40%;
-
+            height: 50%;
+            object-fit: cover;
         }
 
-        .flex {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .divTextoTarjeta {
+            padding: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .divTextoTarjeta>h3 {
+            color: #f31b41;
+            margin: 0px;
+            margin-top: 10px;
+        }
+
+        .divTextoTarjeta>p {
+            margin: 0px;
+            margin-top: 15px;
+            color: #a4a4a4;
+            font-size: 15px;
         }
 
         .divTres {
             width: 100%;
             height: 200px;
             background-color: #1a002f;
+            text-align: center;
+            overflow: hidden;
         }
 
         .divTres>h1 {
-            font-size: 170px;
+            font-size: 150px;
             color: #f31b41;
             margin: 0px;
-            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -68,27 +91,46 @@
         <h1>Responsive Cards</h1>
     </div>
 
-    <div class="divDos flex">
-
-    </div class="">
-    <div class="divTarjetas">
-        <div>
-            <img src="../recursos/imagenes/imgcinco.jpg" alt="">
+    <div class="divDos">
+        <div class="divTarjetas">
+            <img src="../recursos/imagenes/img13.jpg" alt="Luffy">
+            <div class="divTextoTarjeta">
+                <h3>Card One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptates ab magnam eos,
+                    aspernatur saepe veniam cum assumenda officia laboriosam laudantium quidem odit! Vel placeat eos
+                    aliquam in a!</p>
+            </div>
         </div>
-        <div></div>
+        <div class="divTarjetas">
+            <img src="../recursos/imagenes/img14.jpg" alt="Zoro">
+            <div class="divTextoTarjeta">
+                <h3>Card Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptates ab magnam eos,
+                    aspernatur saepe veniam cum assumenda officia laboriosam laudantium quidem odit! Vel placeat eos
+                    aliquam in a!</p>
+            </div>
+        </div>
+        <div class="divTarjetas">
+            <img src="../recursos/imagenes/img15.jpg" alt="Sanji">
+            <div class="divTextoTarjeta">
+                <h3>Card Three</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptates ab magnam eos,
+                    aspernatur saepe veniam cum assumenda officia laboriosam laudantium quidem odit! Vel placeat eos
+                    aliquam in a!</p>
+            </div>
+        </div>
+        <div class="divTarjetas">
+            <img src="../recursos/imagenes/img16.jpg" alt="Nico Robin">
+            <div class="divTextoTarjeta">
+                <h3>Card Four</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptates ab magnam eos,
+                    aspernatur saepe veniam cum assumenda officia laboriosam laudantium quidem odit! Vel placeat eos
+                    aliquam in a!</p>
+            </div>
+        </div>
+
     </div>
-    <div class="divTarjetas">
-        <div></div>
-        <div></div>
-    </div>
-    <div class="divTarjetas">
-        <div></div>
-        <div></div>
-    </div>
-    <div class="divTarjetas">
-        <div></div>
-        <div></div>
-    </div>
+
     <div class="divTres">
         <h1>Using Flexbox</h1>
     </div>

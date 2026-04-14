@@ -1,13 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3</title>
     <meta name="author" content="Fabio Andres Meza Banquet">
-    <meta name="description" content="Ejercicio 3">
+    <meta name="description" content="Página Ejercicio 3">
+    <style>
+        body {
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #a4a4a4;
+            margin-left: 40px;
+            font-size: large;
+        }
+
+        h1,
+        em,
+        p,
+        a,
+        h3 {
+            font-family: 'Pacifico', cursive;
+        }
+
+        .divUno {
+            width: 100%;
+            height: 300px;
+        }
+
+        .setenta {
+            width: 60%;
+        }
+
+        .setenta>img {
+            width: 800px;
+            overflow: hidden;
+            height: 295px;
+        }
+
+        .cuarenta {
+            overflow: hidden;
+        }
+
+        .cuarentaimg {
+            display: flex;
+        }
+
+        .cuarentaimg>img {
+            margin: 5px;
+            width: 100%;
+            height: 130px;
+            overflow: hidden;
+        }
+
+        .divDos {
+            width: 100%;
+            height: 500px;
+        }
+
+        .divDosImg {
+            padding: 0px;
+            display: flex;
+
+        }
+
+        .divDosImg>img {
+            margin: 10px;
+            width: 100%;
+            height: 230px;
+            overflow: hidden;
+        }
+
+        .otroP {
+            color: #a4a4a4;
+            margin-right: 50px;
+        }
+
+    </style>
 </head>
+
 <body>
+    <table width="100%">
+        <tr>
+            <td width="60%">
+                <h1><em>SimpleTape</em></h1>
+            </td>
+            <td>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Portfolio</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="divUno">
+        <table>
+            <tr>
+                <td class="setenta">
+                    <img src="../recursos/imagenes/img17.webp" alt="Ultima Cena">
+                </td>
+                <td class="cuarenta">
+                    <p style="margin: 0px; margin-left: 5px;"><strong>Lastest from the gallery</strong></p>
+                    <div class="cuarentaimg">
+                        <img src="../recursos/imagenes/img18.jpg" alt="">
+                        <img src="../recursos/imagenes/img19.jpg" alt="">
+                        <img src="../recursos/imagenes/img20.jpg" alt="">
+                    </div>
+                    <div class="cuarentaimg">
+                        <img src="../recursos/imagenes/img21.jpg" alt="">
+                        <img src="../recursos/imagenes/img22.jpg" alt="">
+                        <img src="../recursos/imagenes/img23.jpg" alt="">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Our best work</h3>
+
+    <div class="divDos">
+        <div class="divDosImg">
+            <img src="../recursos/imagenes/img24.jpg" alt="">
+            <img src="../recursos/imagenes/img25.jpg" alt="">
+            <img src="../recursos/imagenes/img26.jpg" alt="">
+        </div>
+
+        <div class="divDosImg">
+            <img src="../recursos/imagenes/img27.jpg" alt="">
+            <img src="../recursos/imagenes/img28.jpg" alt="">
+            <img src="../recursos/imagenes/img29.jpg" alt="">
+        </div>
+    </div>
+
+    <table width="100%">
+        <tr>
+            <td>
+                <h3>What we do</h3>
+                <p class="otroP">Nulla sed justo vitae eros euismod volutpat. Mauris in fermentum justo. Vivamus in
+                    risus metus, nec
+                    rhoncus arcu. Sed eleifend laoreet elit sed viverra. Vivamus ornare mattis interdum. Integer
+                    convallis placerat aliquam. Vivamus id leo eget nunc lacinia pulvinar sit amet id nibh. 
+                    <a href="#" style="margin-left: 0px;">See more..</a>
+                </p>
+            </td>
+            <td>
+                <h3>How to Contact Us</h3>
+                <p class="otroP">Nulla sed justo vitae eros euismod volutpat. Mauris in fermentum justo. Vivamus in
+                    risus metus, nec rhoncus arcu. Sed eleifend laoreet elit sed viverra. Vivamus ornare mattis
+                    interdum. Integer convallis placerat aliquam. Vivamus id leo eget nunc lacinia pulvinar sit amet id
+                    nibh. <a href="#" style="margin-left: 0px;">See more..</a></p>
+            </td>
+        </tr>
+    </table>
     
 </body>
+
 </html>
